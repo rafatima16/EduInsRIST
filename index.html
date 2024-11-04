@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="update.css">
+    <title>Educational Institution</title>
+</head>
+<body>
+    <header>
+        <h1>Rafaa International School of Technology</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="lifeatrist.html">Life at RIST</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hello">
+            <h1> WELCOME TO RIST</h1>
+            <img src="C:\Users\rafat\OneDrive\Pictures\Screenshots\Welcome.png" class="fade-in">
+        </section>
+    </main>
+    <footer>
+        <p>Rafaa International School of Technology © 2024</p>
+        <br>
+        <p> Accredited Institute of Higher Education.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.fade-in');
+
+            setTimeout(() => {
+                sections.forEach(section => {
+                    section.classList.add('visible');
+                });
+            }, 100);
+        });
+
+// Simple Tuition Fee Calculator
+function calculateTuitionFee() {
+    const creditHours = document.getElementById('creditHours').value;
+    const tuitionRate = 50; // assumption
+    const totalTuitionFee = creditHours * tuitionRate;
+    alert("Total Tuition Fee is $"+totalTuitionFee);
+}
+document.getElementById('inquiry-form').addEventListener('submit', function(event)
+        {
+           // event.preventDefault;
+            alert("Your inquiry has been submitted successfully! We will contact you in the next 24 hours");
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(221, 214, 176);
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    text-align: center;
+    background: darkgoldenrod;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    position: relative; /* Ensure proper stacking context */
+    height: 120px;
+}
+
+footer {
+    background: darkgoldenrod; 
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    position: relative; /* Ensure proper stacking context */
+}
+
+nav ul {
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center items horizontally */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+nav ul li a {
+    font-size: 20px; /* Increase font size */
+    padding: 10px 15px; /* Add padding for larger clickable area */
+    text-decoration: none; /* Remove underline */
+    color: black; /* Change link color */
+    transition: background-color 0.3s; /* Optional: smooth background change on hover */
+}
+
+nav ul li a:hover {
+    background-color: white; 
+}
+
+#hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; 
+    flex-direction: column; 
+    position: relative;
+}
+
+#hello h1 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+#hello img {
+    max-height: 100%; /* Limit max height to ensure visibility */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Make the image take full width */
+    height: auto; /* Make the image take full height */
+    object-fit: cover; /* Cover the area without distorting aspect ratio */
+    z-index: -1; /* Send image to the back */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1; /* Become visible */
+    transform: translateY(0); /* Move to original position */
+}
+
+#inquiry {
+    height: 100px; /* Set desired height */
+    width: 30%; /* Full width */
+    padding: 10px; /* Padding for text area */
+    font-size: 16px; /* Font size */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.inquiry-container {
+    display: flex;
+    flex-direction: column; /* Stack label and textarea vertically */
+}

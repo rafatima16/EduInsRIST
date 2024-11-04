@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="update.css">
+    <title>Educational Institution</title>
+</head>
+<body>
+    <header>
+        <h1>Rafaa International School of Technology</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="lifeatrist.html">Life at RIST</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>ABOUT US</h1>
+            <p style="font-size: 26px;">We focus on providing you with a quality education in Information Technology (IT). Our vibrant student community is at the heart of all we do. 
+                Our courses, teachers and support staff are outstanding, to help you every step of the way, your journey to a new career starts here. 
+                So let our success be the start of your success.</p>
+                <br>
+                <img src="C:\Users\rafat\OneDrive\Pictures\Screenshots\AboutUs.png" style="width: 100%; max-height: 40vh;" class="fade-in">
+        </section>
+    </main>
+    <footer>
+        <p>Rafaa International School of Technology © 2024</p>
+        <br>
+        <p> Accredited Institute of Higher Education.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() 
+        {
+         const sections = document.querySelectorAll('section');
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.fade-in');
+
+            setTimeout(() => {
+                sections.forEach(section => {
+                    section.classList.add('visible');
+                });
+            }, 100);
+        });
+
+    </script>
+</body>
+</html>

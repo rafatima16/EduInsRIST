@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="update.css">
+    <title>Educational Institution</title>
+</head>
+<body>
+    <header>
+        <h1>Rafaa International School of Technology</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="lifeatrist.html">Life at RIST</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="admissions">
+            <h1>ADMISSIONS</h1>
+            <p style="font-size: 24px;">A Student visa is required for Admission as an International Student. You must always follow the conditions of your visa.
+                You must meet the entry requirements for addmission. </p>
+                <div id="tuition-fee-calculator">
+                    <h1>TUITION FEE CALCULATOR</h1>
+                    <label for="creditHours">Credit Hours:</label>
+                    <input type="number" id="creditHours" required>
+                    <button onclick="calculateTuitionFee()">Calculate</button>
+                    <p id="result" style="font-weight: bold; margin-top: 10px;"></p>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>Rafaa International School of Technology © 2024</p>
+        <br>
+        <p> Accredited Institute of Higher Education.</p>
+    </footer>
+
+    <script>
+        // Simple Tuition Fee Calculator
+function calculateTuitionFee() {
+    const creditHours = document.getElementById('creditHours').value;
+    const tuitionRate = 50; // assumption
+    const totalTuitionFee = creditHours * tuitionRate;
+    document.getElementById('result').innerText = "Total Tuition Fee is $" + totalTuitionFee;
+}
+        window.addEventListener('scroll', function() 
+        {
+         const sections = document.querySelectorAll('section');
+        });
+    </script>
+</body>
+</html>

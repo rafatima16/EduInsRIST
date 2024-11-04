@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="update.css">
+    <title>Educational Institution</title>
+</head>
+<body>
+    <header>
+        <h1>Rafaa International School of Technology</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="lifeatrist.html">Life at RIST</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h1>CONTACT</h1>
+            <p style="font-size: 22px;">Email: info@rist@edu.au | Mobile: 0478678640 </p>
+            <br>
+            <h2>INQUIRY FORM</h2>
+            <p style="font-size: 22px;"> For any inquiries, please fill out the inquiry form.</p>
+            <br>
+            <form id="inquiry-form">
+                <label for="name" style="font-size: 22px;">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email" style="font-size: 22px;">Email ID:</label>
+                <input type="email" id="email" required>
+                <label for="contact" style="font-size: 22px;">Mobile number:</label>
+                <input type="number" id="contact" required>
+                <br>
+                <div class="inquiry-container">
+                    <label for="inquiry" style="font-size: 22px;">What do you need help with?</label>
+                    <textarea id="inquiry" required></textarea>
+                </div>
+                <input type="submit" value="Send Inquiry" style="font-size: 20px;">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Rafaa International School of Technology © 2024</p>
+        <br>
+        <p> Accredited Institute of Higher Education.</p>
+    </footer>
+
+    <script>
+        document.getElementById('inquiry-form').addEventListener('submit', function(event)
+        {
+           // event.preventDefault;
+            alert("Your inquiry has been submitted successfully! We will contact you in the next 24 hours");
+        })
+        window.addEventListener('scroll', function() 
+        {
+         const sections = document.querySelectorAll('section');
+        });
+    </script>
+</body>
+</html>

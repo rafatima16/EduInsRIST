@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="update.css">
+    <title>Educational Institution</title>
+</head>
+<body>
+    <header>
+        <h1>Rafaa International School of Technology</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="lifeatrist.html">Life at RIST</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="lifeatrist">
+            <h1>LIFE AT RIST</h1>
+            <h2>WELCOME TO THE RIST DIFFERENCE</h2>
+            <p style="font-size: 22px;"> We are committed to fostering an inclusive and culturally diverse study and work environment that is free from discrimination of any kind.</p>
+            <br>
+            <p style="font-size: 22px;">All our courses are conducted in English, and we encourage our students and staff to communicate in English while on campus.</p>
+            <br>
+            <p style="font-size: 22px;">We welcome both Australian and International Students as part of our student cohort.</p>
+            <br>
+            <p style="font-size: 22px;">We are focused on the student experience, especially helping International Students adjust to living and studying in a new country. </p>
+            <br>
+            <p style="font-size: 22px;">We value the diversity this creates in the classroom, the opportunity for students to share their experiences from different parts of the world, and the learning this brings.</p>
+            <br>
+            <h1>EMPOWERING WOMEN IN IT</h1>
+            <p style="font-size: 22px;">SISTC understands the challenges women can face in their journey on an IT career. 
+                Through its approach to teaching, student support and mentoring, SISTC prides itself on being a preferred study destination for women in IT.</p>
+            <br>
+            <img src="C:\Users\rafat\OneDrive\Pictures\Screenshots\LAC2.png" class="fade-in">
+            <img src="C:\Users\rafat\OneDrive\Pictures\Screenshots\LAC1.png" class="fade-in">
+            <img src="C:\Users\rafat\OneDrive\Pictures\Screenshots\LAC3.png" class="fade-in">
+        </section>
+    </main>
+    <footer>
+        <p>Rafaa International School of Technology © 2024</p>
+        <br>
+        <p> Accredited Institute of Higher Education.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const images = document.querySelectorAll('.fade-in');
+            images.forEach(image => {
+                const imagePosition = image.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.5;
+
+                if (imagePosition < screenPosition) {
+                    image.classList.add('visible');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.fade-in');
+
+    function checkImages() {
+        images.forEach(image => {
+            const imagePosition = image.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.5;
+
+            if (imagePosition < screenPosition) {
+                image.classList.add('visible');
+            }
+        });
+    }
+
+    // Check images when scrolling
+    window.addEventListener('scroll', checkImages);
+
+    // Check images on initial load
+    checkImages();
+});
+    </script>
+</body>
+</html>
